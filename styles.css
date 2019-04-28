@@ -1,0 +1,127 @@
+body{
+    background-image: url("https://i.imgur.com/P7byj1G.jpg");
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2vh 10vh 0 10vh;
+}
+
+.footer {
+    bottom: 0;
+    padding-bottom: 1vh;
+}
+
+span{
+    padding: 0 5vh 0 0;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column-header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+ 
+.column {
+    height: 85vh;
+}
+  
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 65%;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-margin-bot{
+    margin-bottom: 1vh;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: transparent;
+    margin: 0;
+    color: white;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    border: 1px solid white;
+    font-weight: bold;   
+}
+
+
+input[type=submit] {
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    font-weight: bold; 
+}
+
+.text-white, a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.tag-line{
+    font-size: 8vh;
+}
+
+.catch-phrase{
+    font-weight: 200;
+    color: grey;
+}
+
+@media (max-width: 750px) {
+    .links {
+        display: none;
+    }
+    #footer {
+        display: flex;
+        justify-content: null;
+        align-items: null;
+        padding: 0;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .column {
+        height: 50vh;
+    }
+    .catch-phrase{
+        display: none;
+    }
+}
